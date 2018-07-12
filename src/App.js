@@ -151,6 +151,11 @@ injectGlobal`
     padding: 0;
     line-height: 1.2;
     -webkit-tap-highlight-color: transparent;
+
+    ::selection {
+      background-color: white;
+      color: #222;
+    }
   }
 `;
 
@@ -176,6 +181,7 @@ const Title = styled.p`
   top: 4.375rem;
   left: 4.375rem;
   font-size: 3.75rem;
+  line-height: 0.8;
   letter-spacing: 0;
   z-index: 100;
   cursor: pointer;
